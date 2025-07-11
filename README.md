@@ -1,62 +1,85 @@
-🇲🇼 Malawi Districts Graph Visualization
+# 🇲🇼 Malawi Districts Graph Visualization
 
-This project visualizes connections between Malawi's districts using a force-directed graph layout algorithm. The output is an optimized layout that clearly shows how districts are connected, minimizing overlaps and improving readability.
+**This project visualizes connections between Malawi's districts using a force-directed graph layout algorithm.** The output is an optimized layout that clearly shows how districts are connected, minimizing overlaps and improving readability.
 
-📸 Preview
+---
 
-The layout is rendered using an HTML5 <canvas> element, showcasing districts as nodes and their connections as edges.
+## 📸 Preview
 
-📂 Project Structure
+**The layout is rendered using an HTML5 **``** element, showcasing districts as nodes and their connections as edges.**
 
+---
+
+## 📂 Project Structure
+
+```
 .
-├── index.html          # Web page with a canvas to render the graph
-├── malawiGraph.js      # Force-directed layout algorithm + visualization logic
-└── README.md           
+├── index.html        # Web page with a canvas to render the graph
+├── malawiGraph.js    # Force-directed layout algorithm + visualization logic
+└── README.md         # You're here
+```
 
-🚀 How to Run
+---
 
-Clone this repository
+## 🚀 How to Run
 
-git clone https://github.com/petroskayange/MalawiDistrictConnections
+### 1. **Clone this repository**
+
+```bash
+git clone https://github.com/petroskayange/MalawiDistrictConnections.git
 cd MalawiDistrictConnections
+```
 
-Open the Visualization
+### 2. **Open the Visualization**
 
-Simply open index.html in any modern browser (e.g. Chrome, Firefox, Edge):
+Simply open `index.html` in any modern browser (e.g. Chrome, Firefox, Edge):
 
-You can double-click index.html, or
+- You can **double-click** `index.html`, or
+- Use terminal:
 
-From the terminal:
+```bash
+# macOS
+open index.html
 
-open index.html        # macOS
-xdg-open index.html    # Linux
-start index.html       # Windows
+# Linux
+xdg-open index.html
 
-See the Output
+# Windows
+start index.html
+```
 
-The canvas will render the districts as black nodes with labeled names, and the edges (connections) will appear as light gray lines.
+### 3. **Or Run via Node.js**
 
-OR run 
+```bash
 node malawiGraph.js
+```
 
-🧠 How It Works
+### 4. **See the Output**
 
-malawiGraph.js contains:
+**The canvas will render the districts as black nodes with labeled names, and the edges (connections) will appear as light gray lines.**
 
-Raw district data (nodes and edges)
+---
 
-A force-directed layout algorithm that repositions nodes by simulating repulsive and attractive forces
+## 🧠 How It Works
 
-Code to draw the final graph onto the canvas
+- ``** contains:**
+  - **Raw district data (**``** and **``**)**
+  - **A force-directed layout algorithm that simulates repulsion and attraction**
+  - **Canvas-based drawing logic**
+- **Node coordinates are normalized (**``**) and scaled to fit the canvas.**
 
-Coordinates are normalized (between 0 and 1) and scaled to fit the canvas.
+---
 
-🔧 Customize
+## 🔧 Customize
 
-You can modify:
+**You can modify:**
 
-iterations, k, and temp values in the forceDirectedLayout() function to change the simulation behavior.
+- ``**, **``**, and **``** values in the **``** function to fine-tune the layout**
+- **Node radius, color, font size, or edge styles inside the rendering section**
 
-📄 License
+---
 
-MIT License © 2025 [Petros Kayange]
+## 📄 License
+
+**MIT License © 2025 **[**Petros Kayange**](https://github.com/petroskayange)
+
