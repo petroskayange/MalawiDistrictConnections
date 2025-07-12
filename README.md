@@ -60,26 +60,8 @@ node malawiGraph.js
 
 ---
 
-## 🧠 How It Works
-
-- ``** contains:**
-  - **Raw district data (**``** and **``**)**
-  - **A force-directed layout algorithm that simulates repulsion and attraction**
-  - **Canvas-based drawing logic**
-- **Node coordinates are normalized (**``**) and scaled to fit the canvas.**
-
----
-
-## 🔧 Customize
-
-**You can modify:**
-
-- ``**, **``**, and **``** values in the **``** function to fine-tune the layout**
-- **Node radius, color, font size, or edge styles inside the rendering section**
-
----
 
 ## 📄 License
 
-**MIT License © 2025 **[**Petros Kayange**](https://github.com/petroskayange)
+MIT License © 2025 [**Petros Kayange**](https://github.com/petroskayange)
 
